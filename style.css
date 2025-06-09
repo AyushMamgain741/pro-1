@@ -1,0 +1,56 @@
+/* Basic styling for form */
+
+body {
+    background: #121212;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+    margin: 0;
+    background-image:url('japan-aesthetic.gif') ;
+}
+
+.form-container {
+   /* background: #4b4242; */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #f5cf24;
+    width: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #f5cf24;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #d4b200;
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+a {
+    color: #f5cf24;
+}

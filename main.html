@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameZone Store</title>
+  <link rel="stylesheet" href="new.css" />
+</head>
+
+<body>
+ <!--register form -->
+
+
+
+ <!--register end -->
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo">
+      <h1>GameNexus</h1>
+    </div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="#">Home🤹🏾‍♂️</a></li>
+        <li><a href="#">Upcoming🎡</a></li>
+        <li><a href="#">Social📸</a></li>
+        <li><a href="#">News📺</a></li>
+      </ul>
+    </nav>
+  </header>
+ <!-- Search and Filter -->
+<div class="search-filter-container">
+    <input type="text" id="searchInput" placeholder="🔍Search games..." onkeyup="filterGames()" />
+    <select id="categoryFilter" onchange="filterGames()">
+      <option value="all">All Categories 🎲</option>
+      <option value="action">Action 🧗🏿‍♂️</option>
+      <option value="adventure">Adventure 🚵🏿‍♀️</option>
+      <option value="free">Free ⚽️</option>
+      <option value="rpg">RPG 🤺</option>
+    </select>
+  </div>
+  
+
+  <!-- Main Section -->
+  <main class="main-layout">
+
+    <!-- Featured and Games Section -->
+    <section class="content-area">
+
+      <!-- Featured Banner -->
+      <div class="featured-banner">
+        <img src="the-last-of-us-part-2-remastered-ellie-uhd-4k-wallpaper.jpg" alt="Featured Game">
+        <div class="banner-details">
+          <h2> trending now!</h2>
+          <p>OUT NOW! Join the rebellion and Survive the Apocalyptic world .</p>
+          <button onclick ="window.location.href='download.html'"> Buy Now</button>
+          <button onclick ="window.location.href='download.html'">mark for latter</button>
+        </div>
+      </div>
+
+      <!-- Game Cards -->
+      <h2>Discover Something New</h2>
+      <div class="game-grid" id="game-list">
+        <div class="game-card" data-category="action" data-price="1200">
+          <img src="Grand-Theft-Auto-V.jpg" alt="Game 1">
+          <h3>GTA V</h3>
+          <p>₹999</p>
+         <button onclick="location.href='https://www.rockstargames.com/gta-v'">Buy</button>
+        </div>
+        <!--my changes-->
+        <div class="game-card" data-category="action">
+            <img src="Red-Redemption-2.jpg" alt="Game 1">
+            <h3>Red dead Redemption-2</h3>
+            <p>₹1200</p>
+            <button onclick="location.href='https://store.rockstargames.com/game/buy-red-dead-redemption-2'">Buy</button>
+          </div>
+          <div class="game-card" data-category="action">
+            <img src="spotlight_image_english.png" alt="Game 2">
+            <h3>SOLAR EMPIRE</h3>
+            <p>₹599</p>
+            <button onclick="location.href='https://sins-of-a-solar-empire.en.download.it/'">Buy</button>
+          </div>
+          <div class="game-card" data-category="adventure">
+            <img src="spotlight_image_english.jpg" alt="Game 3">
+            <h3>THE LONG DARK</h3>
+            <p>₹399</p>
+            <button onclick="location.href='https://thelongdark.fandom.com/wiki/The_Long_Dark'">Buy</button>
+          </div>
+          <div class="game-card" data-category="adventure">
+            <img src="witcher-3-Wild-Hunt-Blood-and-Wine.jpg" alt="Game 4">
+            <h3>Witcher-3-Wild-Hunt-Blood-and-Wine</h3>
+            <p>₹350</p>
+            <button onclick="location.href='https://www.thewitcher.com/us/en/witcher3'">Buy</button>
+          </div>
+          <div class="game-card" data-category="action">
+            <img src="Wallpaper_08.png" alt="Game 5">
+            <h3>RESIDENT EVIL 2 (Remastered)</h3>
+            <p>₹1299</p>
+            <button onclick="location.href='https://www.residentevil.com/2/'">Buy</button>
+          </div>
+          <div class="game-card" data-category="adventure">
+            <img src="Just-Cause-4.jpg" alt="Game 6">
+            <h3>Just-Cause-4</h3>
+            <p>₹800</p>
+            <button onclick="location.href='https://www.playstation.com/en-us/games/just-cause-4/'">Buy</button>
+          </div>
+          <div class="game-card" data-category="RPG">
+            <img src="header_ratio.jpg" alt="Game 1">
+            <h3>Halo</h3>
+            <p>₹1209</p>
+            <button onclick="location.href='https://www.xbox.com/en-US/play/games/halo-the-master-chief-collection/9MT8PTGVHX2P'">Buy</button>
+          </div>
+          <div class="game-card" data-category="rpg">
+            <img src="66ad0e4d363e1c92f9f8aae67a96dd31.jpeg" alt="Game 1">
+            <h3>AMONG US</h3>
+            <p>₹719</p>
+            <button onclick="location.href='https://www.bluestacks.com/apps/action/among-us-on-pc.html'">Buy</button>
+          </div>
+          <div class="game-card" data-category="rpg">
+            <img src="a74e323f6e75ac3d6acf7afa2645113f.png" alt="Game 1">
+            <h3>cyberpunk 2077</h3>
+            <p>₹1799</p>
+            <button>buy now</button>
+          </div>
+          <div class="game-card" data-category="rpg">
+            <img src="47.jpg" alt="Game 1">
+            <h3>FAR CRY 4</h3>
+            <p>₹599</p>
+            <button>buy now</button>
+          </div>
+          <div class="game-card" data-category="action">
+            <img src="05f72be9cbe7f3e8fac2021666fe2669.jpeg" alt="Game 1">
+            <h3>CALL OF DUTY</h3>
+            <p>₹899</p>
+            <button>buy now</button>
+          </div>
+          <div class="game-card" data-category="action">
+            <img src="573678c7e6b17bbc8b328775ae93a363.jpeg" alt="Game 1">
+            <h3>EMPIRES </h3>
+            <p>₹719</p>
+            <button>buy now</button>
+          </div>
+          <div class="game-card" data-category="adventure">
+            <img src="ff7daab5375e7998b37ec1dc62cb3805.jpeg" alt="Game 1">
+            <h3>PALWORLD</h3>
+            <p>₹719</p>
+            <button>buy now</button>
+          </div>
+          <div class="game-card" data-category="action">
+            <img src="d652546e3ab28000dac1e6b706d56263.jpeg" alt="Game 1">
+            <h3>BORDERLANDS3</h3>
+            <p>₹1029</p>
+            <button>buy now</button>
+          </div>
+          
+          <!---end here-->
+        
+
+    </section>
+
+    <!-- Sidebar Section -->
+    <aside class="sidebar">
+      <h3>Popular Games</h3>
+      <ul class="sidebar-list">
+        <li><img src="header_ratio (1).jpg" alt="Sale"> DIABLO</li></ul>
+        <ul class="sidebar-list">
+        <li><img src="573678c7e6b17bbc8b328775ae93a363.jpeg" alt="Fall Guys"> EMPIRES</li></ul>
+        <ul class="sidebar-list">
+        <li><img src="header (1).jpg" alt="Genshin Impact"> APEX LEGENDS</li></ul>
+        <ul class="sidebar-list">
+        <li><img src="c8884ffd0cd3ae1da172d7ab65a8b30b.jpeg" alt="Assassins Creed"> PERSONA 5</li></ul>
+        <ul class="sidebar-list">
+        <li><img src="a74e323f6e75ac3d6acf7afa2645113f.png" alt="Wuthering Waves"> CYBERPUNK LIBERTY CITY</li>
+      </ul>
+      <h4>new to stock</h4>
+      <ul class="sidebar-list">
+        <li><img src="header_alt_assets_2.jpg" alt="FORZA HORIZAN"> FORZA HORIZAN</li> </ul>
+        <ul class="sidebar-list">
+        <li><img src="header (3).jpg" alt="OUTLAST"> OUTLAST</li> </ul>
+        <ul class="sidebar-list">
+        <li><img src="E:\web dev\header_292x136 (2).jpg" alt="Genshin Impact"> STARDREW VALLEY</li> </ul>
+        <ul class="sidebar-list">
+        <li><img src="header_292x136 (1).jpg" alt="Assassins Creed">WALLPAPER ENGINE</li> </ul>
+        <ul class="sidebar-list">
+        <li><img src="header_292x136.jpg" alt="Wuthering Waves"> TERRARIA</li>
+      </ul>
+    </aside>
+   
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 GameZone. All rights reserved.</p>
+  </footer>
+  <script>
+    function filterGames() {
+      var searchInput = document.getElementById('searchInput').value.toLowerCase();
+      var selectedCategory = document.getElementById('categoryFilter').value;
+      var gameCards = document.querySelectorAll('.game-card');
+    
+      gameCards.forEach(function(card) {
+        var title = card.querySelector('h3').innerText.toLowerCase();
+        var category = card.getAttribute('data-category');
+    
+        var matchesSearch = title.includes(searchInput);
+        var matchesCategory = (selectedCategory === 'all' || category === selectedCategory);
+    
+        if (matchesSearch && matchesCategory) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+    </script>
+    
+</body>
+</html>

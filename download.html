@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Last of Us Part II Remastered</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo"> GameNexus</div>
+  <!--saved  <div class="search-login">
+    <input type="text" placeholder="Search games...">--->
+    <button class="login-button" onclick="window.location.href='file:///E:/web%20dev/new.html'">Home🚵🏼</button>
+  </div>
+</header>
+
+<main class="container">
+  <div class="left-section">
+    <h1>The Last of Us™ Part II Remastered</h1>
+    <p class="rating">⭐⭐⭐⭐⭐ 4.8 (Epic Ratings)</p>
+    <p class="category">Action, Adventure</p>
+
+    <div class="game-media">
+        <div class="slider">
+          <div class="slides">
+            <img src="the-last-of-us-part-2-remastered-ellie-uhd-4k-wallpaper.jpg" class="slide" alt="Game Slide 1">
+            <img src="giphy.gif" class="slide" alt="Game Slide 2">
+            <img src="giphy 2.gif" class="slide" alt="Game Slide 3">
+          </div>
+          <button class="nav prev" onclick="moveSlide(-1)">&#10094;</button>
+          <button class="nav next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+      </div>
+      
+    <section class="description">
+      <h2>About the Game</h2>
+      <p>Experience Ellie's journey in this stunningly remastered edition with enhanced graphics, gameplay improvements, and DualSense support.</p>
+    </section>
+    <section class="description">
+        <h2>Plot</h2>
+        <p>Joel (Troy Baker) confesses to his brother, Tommy (Jeffrey Pierce), his responsibility in preventing the Fireflies attempting to develop a cure for the Cordyceps fungus pandemic by saving Ellie (Ashley Johnson) from a non-survivable surgical procedure. Four years later, Joel and Ellie have built a life in Jackson, Wyoming, though their relationship has become strained. While on patrol, Joel and Tommy rescue a stranger, 
+            Abby (Laura Bailey), from an Infected horde. They return to an outpost used as a temporary hideout by Abby's group, former Fireflies now part of the Washington Liberation Front (WLF), a militia group based in Seattle, Washington. The group attack Joel and Tommy; Abby seeks revenge against Joel for murdering her father, the Firefly surgeon (Derek Phillips) who was to perform the operation on Ellie. Meanwhile, Ellie and 
+            her girlfriend, Dina (Shannon Woodward), search for the brothers. Ellie enters the WLF outpost and witnesses
+             Abby beat Joel to death. Abby spares Ellie and Tommy, who swear revenge.
+      <br>
+            Tommy sets out for Seattle to hunt Abby, and Ellie and Dina follow him. In Seattle, Ellie reveals her immunity to Dina, who in turn reveals she is pregnant. The next day, Ellie pursues Tommy alone and encounters Jesse (Stephen Chang), Dina's ex-boyfriend, who followed them. While searching for Abby's friend Nora (Chelsea Tavares), Ellie encounters the Seraphites, a religious cult locked in a battle with the WLF over
+             control of Seattle. Ellie tracks down Nora and tortures her for information on Abby's location, which traumatizes Ellie. The following day, she kills two more members of Abby's group, the pregnant Mel (Ashly Burch) and her boyfriend, Owen (Patrick Fugit). A flashback reveals that, two years earlier, Ellie traveled to the Firefly hospital in Salt Lake City and learned the truth. Devastated, she cut ties with Joel. In the present, Ellie's group is ambushed by Abby, who kills Jesse and holds Tommy hostage.</p>
+      </section>
+  
+    <section class="achievements">
+      <h2>Available Achievements</h2>
+      <div class="achievement-list">
+        <div class="achievement">
+          <img src="playstation ach.gif" alt="First Steps">
+          <p>First Steps</p>
+        </div>
+        <div class="achievement">
+          <img src="achivement 2.gif" alt="Master Survival">
+          <p>Master Survival</p>
+        </div>
+        <div class="achievement">
+          <img src="achive 3.gif" alt="Sharpshooter">
+          <p>Sharpshooter</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ratings">
+      <h2>Player Reviews</h2>
+      <ul>
+        <li>✔ Great Storyline</li>
+        <li>✔ Immersive Graphics</li>
+        <li>✔ High Replay Value</li>
+      </ul>
+    </section>
+
+    <section class="requirements">
+      <h2>System Requirements</h2>
+      <div class="requirements-box">
+        <div class="minimum">
+          <h3>Minimum</h3>
+          <ul>
+            <li>Windows 10</li>
+            <li>Intel Core i5-2500K</li>
+            <li>8 GB RAM</li>
+            <li>NVIDIA GTX 780</li>
+          </ul>
+        </div>
+        <div class="recommended">
+          <h3>Recommended</h3>
+          <ul>
+            <li>Windows 11</li>
+            <li>Intel Core i7-4770K</li>
+            <li>16 GB RAM</li>
+            <li>NVIDIA GTX 1080</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  <!---comment section--->>
+    <section class="comment-section">
+      <h2>💬 Share Your Thoughts</h2>
+      <div class="comment-inputs">
+        <input type="text" id="usernameInput" placeholder="Your name" />
+        <textarea id="commentInput" rows="3" placeholder="Write a comment..."></textarea>
+        <button onclick="submitComment()">Post Comment</button>
+      </div>
+      <div id="commentsList"></div>
+    </section>
+    
+
+
+
+<!---comment end -->
+
+  </div>
+
+  <aside class="right-section">
+    <div class="purchase-box">
+     <h2>50% off🛶</h2>
+        <h2>₹3,299</h2>
+      <button class="Download">Download</button>
+      <button class="links">External links🧲</button>
+    </div>
+  </aside>
+</main>
+
+<footer class="footer">
+  <p>© 2025 Epic Games, Inc. All rights reserved.</p>
+</footer>
+
+     <script>
+  // Your existing slider script...
+  let slideIndex = 0;
+  
+  function moveSlide(step) {
+    const slides = document.querySelector('.slides');
+    const totalSlides = document.querySelectorAll('.slide').length;
+  
+    slideIndex = (slideIndex + step + totalSlides) % totalSlides;
+    slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+  }
+</script>
+  // Comment Section Script
+  <script>
+    function getRandomColor() {
+      const colors = ['#FF6B6B', '#6BCB77', '#4D96FF', '#FFD93D', '#FF9CEE', '#6B6BFF', '#00C9A7', '#FFA500'];
+      return colors[Math.floor(Math.random() * colors.length)];
+    }
+  
+    function submitComment() {
+      const username = document.getElementById('usernameInput').value.trim();
+      const commentText = document.getElementById('commentInput').value.trim();
+  
+      if (username && commentText) {
+        const comment = {
+          user: username,
+          text: commentText,
+          color: getRandomColor()
+        };
+        let comments = JSON.parse(localStorage.getItem('comments')) || [];
+        comments.push(comment);
+        localStorage.setItem('comments', JSON.stringify(comments));
+  
+        document.getElementById('usernameInput').value = '';
+        document.getElementById('commentInput').value = '';
+        displayComments();
+      }
+    }
+  
+    function deleteComment(index) {
+      let comments = JSON.parse(localStorage.getItem('comments')) || [];
+      comments.splice(index, 1);
+      localStorage.setItem('comments', JSON.stringify(comments));
+      displayComments();
+    }
+  
+    function displayComments() {
+      const commentsList = document.getElementById('commentsList');
+      const comments = JSON.parse(localStorage.getItem('comments')) || [];
+      commentsList.innerHTML = comments.map((c, i) => `
+        <div class="comment-item">
+          <div class="comment-avatar" style="background-color: ${c.color};">
+            ${c.user.charAt(0).toUpperCase()}
+          </div>
+          <div class="comment-content">
+            <div class="comment-user">${c.user}</div>
+            <div class="comment-text">${c.text}</div>
+            <button class="delete-button" onclick="deleteComment(${i})">Delete</button>
+          </div>
+        </div>
+      `).join('');
+    }
+  
+    window.onload = displayComments;
+  </script>
+  
+
+
+  
+    
+</body>
+</html>
